@@ -1,9 +1,11 @@
-body{
+body {
     background-color:#001F3F;
     overflow:hidden;
     margin:0 auto;
+    font:Josefin;
+    font-family:sans-serif;
 }
-#header{
+header {
     background-color:#ffffff;
     width:60%;
     height:20vh;
@@ -12,11 +14,11 @@ body{
     border-radius:15px;
     moz-border-radius:15px;
 }
-#title{
+header h1 {
     text-align:center;
     margin:auto;
 }
-#content{
+#content {
     background-color:#ffffff;
     width:60%;
     height:50vh;
@@ -25,7 +27,7 @@ body{
     border-radius:15px;
     moz-border-radius:15px;
 }
-#intro{
+#intro {
     text-align:center;
     margin:auto;
 }
