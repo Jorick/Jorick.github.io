@@ -1,33 +1,91 @@
 body {
-    background-color:#001F3F;
-    overflow:hidden;
-    margin:0 auto;
+    background-color:#ffffff;
+    color:#2e2e2e;
     font:Josefin;
     font-family:sans-serif;
+    font-size:14px;
 }
 header {
-    background-color:#ffffff;
+    display:block;
+    float:left;
     width:60%;
-    height:20vh;
-    margin:2% auto;
-    padding:30px;
-    border-radius:15px;
-    moz-border-radius:15px;
+    height:80px;
+    margin:0;
+    padding:20px 30px;
+    border-bottom:solid #cdcdcd 2px;
 }
 header h1 {
-    text-align:center;
+    text-align:left;
     margin:auto;
+}
+header p {
+    position:relative;
+    left:20px;
+}
+header ul {
+    list-style-type:none;
+    float:left;
+    position:relative;
+    left:70%;
+    bottom:30px;
+    font-size:12px;
+}
+header ul li {
+    display:inline-block;
+    margin:0 20px;
 }
 #content {
-    background-color:#ffffff;
-    width:60%;
-    height:50vh;
-    margin:2% auto;
-    padding:30px;
-    border-radius:15px;
-    moz-border-radius:15px;
+    display:block;
+    float:left;
+    width:70%;
+    margin:0px;
 }
-#intro {
-    text-align:center;
-    margin:auto;
+article {
+    text-align:left;
+    margin: 50px auto;
+    padding:30px 75px;
+}
+article h1 {
+    border-bottom:solid #cdcdcd 1px;
+    width:100%;
+    padding:5px;
+}
+article p {
+    text-indent:30px;
+}
+article .article-footer {
+    text-align:right;
+    font-size:12px;
+    color:#cdcdcd;
+}
+footer {
+    background-color:#ffffff;
+    display:block;
+    position:fixed;
+    bottom:0px;
+    margin:0;
+    width:64%;
+    height:30px;
+    font-size:10px;
+}
+footer ul {
+    list-style-type:none;
+}
+footer ul li {
+    display:inline-block;
+    margin:0 10px;
+    text-align:left;
+}
+aside {
+    background-image:url(images/sidabar.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-clip:padding-box;
+    display:block;
+    float:left;
+    position:fixed;
+    margin:0px;
+    left:70%;
+    width:30%;
+    height:100vh;
 }
