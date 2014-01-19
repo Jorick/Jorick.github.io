@@ -15,24 +15,22 @@ header {
     border-bottom:solid #cdcdcd 2px;
 }
 header h1 {
-    text-align:left;
     margin:auto;
+    text-align:center;
 }
 header p {
-    position:relative;
-    left:20px;
+    text-align:center;
 }
-header ul {
+nav ul {
     list-style-type:none;
-    float:left;
+    float:right;
     position:relative;
-    left:70%;
-    bottom:30px;
+    bottom:20px;
     font-size:12px;
 }
-header ul li {
+nav ul li {
     display:inline-block;
-    margin:0 20px;
+    margin:0 10px;
 }
 #content {
     display:block;
@@ -52,6 +50,8 @@ article h1 {
 }
 article p {
     text-indent:30px;
+    width:90%;
+    margin:0 auto;
 }
 article .article-footer {
     text-align:right;
@@ -76,6 +76,14 @@ footer ul li {
     margin:0 10px;
     text-align:left;
 }
+footer ul li a {
+    text-decoration:none;
+    color:#2e2e2e;
+}
+footer ul li a:hover {
+    text-decoration:none;
+    color:#19bccb;
+}
 aside {
     background-image:url(images/sidabar.png);
     background-position:center;
@@ -88,4 +96,44 @@ aside {
     left:70%;
     width:30%;
     height:100vh;
+}
+@media all and (max-width: 1024px) {
+    aside {
+        display:none;
+    }
+    header {
+        width:95%;
+    }
+    #content {
+        width:100%;
+    }
+    footer {
+        width:100%;
+    }
+}
+@media all and (max-width: 640px) {
+    aside {
+        display:none;
+    }
+    header {
+        width:95%;
+    }
+    header h1 {
+        text-align:left;
+    }
+    header p {
+        text-align:left;
+    }
+    #content {
+        width:100%;
+    }
+    article {
+    margin: 20px auto;
+    padding:10px 50px;
+    }
+    footer {
+        position:relative;
+        width:100%;
+        font-size:12px;
+    }
 }
