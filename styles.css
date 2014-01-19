@@ -5,6 +5,16 @@ body {
     font-family:sans-serif;
     font-size:14px;
 }
+a {
+    color:#2e2e2e;
+    text-decoration:none;
+}
+a:hover {
+    color:#19bccb;
+}
+a:visited {
+    color:#cdcdcd;
+}
 header {
     display:block;
     float:left;
@@ -17,9 +27,11 @@ header {
 header h1 {
     margin:auto;
     text-align:center;
+    font-size:2em;
 }
 header p {
     text-align:center;
+    font-size:1em;
 }
 nav ul {
     list-style-type:none;
@@ -32,6 +44,16 @@ nav ul li {
     display:inline-block;
     margin:0 10px;
 }
+nav ul li a {
+    color:#2e2e2e;
+    text-decoration:none;
+}
+nav ul li a:visited {
+    color:#2e2e2e;
+}
+nav img{
+    display:none;
+}
 #content {
     display:block;
     float:left;
@@ -40,18 +62,19 @@ nav ul li {
 }
 article {
     text-align:left;
-    margin: 50px auto;
+    margin: 30px auto;
     padding:30px 75px;
 }
 article h1 {
     border-bottom:solid #cdcdcd 1px;
     width:100%;
+    font-size:1.5em;
     padding:5px;
 }
 article p {
     text-indent:30px;
     width:90%;
-    margin:0 auto;
+    margin:10px auto;
 }
 article .article-footer {
     text-align:right;
@@ -83,6 +106,10 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration:none;
     color:#19bccb;
+}
+footer ul li a:visited {
+    text-decoration:none;
+    color:#cdcdcd;
 }
 aside {
     background-image:url(images/sidabar.png);
@@ -120,9 +147,39 @@ aside {
     }
     header h1 {
         text-align:left;
+        font-size:2em;
     }
     header p {
         text-align:left;
+    }
+    nav img {
+        display:block;
+        float:right;
+        position:absolute;
+        right:30px;
+        top:30px;
+    }
+    nav ul {
+        list-style-type:none;
+        float:left;
+        position:absolute;
+        top:60px;
+        right:20px;
+        font-size:12px;
+        z-index:100;
+    }
+    nav ul li {
+        display:block;
+        width:200px;
+        text-align:center;
+        font-size:3em;
+        padding:0.75em 0;
+        background-color:#ffffff;
+        border:solid 1px #cdcdcd;
+    }
+    nav ul li a {
+        color:#2e2e2e;
+        text-decoration:none;
     }
     #content {
         width:100%;
