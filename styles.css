@@ -140,7 +140,7 @@ aside {
         width:100%;
     }
 }
-@media all and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
     aside {
         display:none;
     }
@@ -148,13 +148,11 @@ aside {
         width:95%;
     }
     header h1 {
-        text-align:left;
+        text-align:center;
         font-size:2em;
-        margin-left:80px;
     }
     header p {
-        text-align:left;
-        margin-left:80px;
+        text-align:center;
     }
     #nav {
         position:relative;
@@ -199,7 +197,7 @@ aside {
         font-size:12px;
     }
 }
-@media handheld {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     aside {
         display:none;
     }
@@ -207,11 +205,11 @@ aside {
         width:95%;
     }
     header h1 {
-        text-align:left;
+        text-align:center;
         font-size:2em;
     }
     header p {
-        text-align:left;
+        text-align:center;
     }
     #nav {
         position:relative;
