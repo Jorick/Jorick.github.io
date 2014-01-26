@@ -16,6 +16,7 @@ a:visited {
     color:#cdcdcd;
 }
 header {
+    background-color:#ffffff;
     display:block;
     float:left;
     width:60%;
@@ -27,32 +28,32 @@ header {
 header h1 {
     margin:auto;
     text-align:center;
-    font-size:2em;
+    font-size:3em;
 }
 header p {
     text-align:center;
     font-size:1em;
 }
-nav ul {
+#nav > a {
+    display:none;
+}
+#nav ul {
     list-style-type:none;
     float:right;
     position:relative;
-    bottom:20px;
-    font-size:12px;
+    bottom:30px;
+    font-size:1em;
 }
-nav ul li {
+#nav ul li {
     display:inline-block;
     margin:0 10px;
 }
-nav ul li a {
+#nav ul li a {
     color:#2e2e2e;
     text-decoration:none;
 }
-nav ul li a:visited {
+#nav ul li a:visited {
     color:#2e2e2e;
-}
-nav img{
-    display:none;
 }
 #content {
     display:block;
@@ -61,6 +62,7 @@ nav img{
     margin:0px;
 }
 article {
+    background-color:#ffffff;
     text-align:left;
     margin: 30px auto;
     padding:30px 75px;
@@ -148,38 +150,41 @@ aside {
     header h1 {
         text-align:left;
         font-size:2em;
+        margin-left:80px;
     }
     header p {
         text-align:left;
+        margin-left:80px;
     }
-    nav img {
-        display:block;
-        float:right;
-        position:absolute;
-        right:30px;
-        top:30px;
-    }
-    nav ul {
-        list-style-type:none;
+    #nav {
+        position:relative;
         float:left;
-        position:absolute;
-        top:60px;
-        right:20px;
-        font-size:12px;
-        z-index:100;
+        bottom:70px;
+        left:-20px;
     }
-    nav ul li {
+    #nav:not( :target ) > a:first-of-type,
+				#nav:target > a:last-of-type
+				{
+					display: block;
+				}
+    #nav ul {
+        display:none;
+    }
+    #nav:target > ul {
         display:block;
-        width:200px;
-        text-align:center;
-        font-size:3em;
-        padding:0.75em 0;
+    }
+    #nav ul li {
+        position:relative;
+        top:20px;
+        left:-50px;
+        padding:10px 20px;
         background-color:#ffffff;
+        width:100%;
+        float:none;
         border:solid 1px #cdcdcd;
     }
-    nav ul li a {
-        color:#2e2e2e;
-        text-decoration:none;
+    #nav ul li a {
+        font-size:3em;
     }
     #content {
         width:100%;
@@ -192,5 +197,62 @@ aside {
         position:relative;
         width:100%;
         font-size:12px;
+    }
+}
+@media handheld {
+    aside {
+        display:none;
+    }
+    header {
+        width:95%;
+    }
+    header h1 {
+        text-align:left;
+        font-size:2em;
+    }
+    header p {
+        text-align:left;
+    }
+    #nav {
+        position:relative;
+        float:left;
+        bottom:70px;
+        left:-20px;
+    }
+    #nav:not( :target ) > a:first-of-type,
+				#nav:target > a:last-of-type
+				{
+					display: block;
+				}
+    #nav ul {
+        display:none;
+    }
+    #nav:target > ul {
+        display:block;
+    }
+    #nav ul li {
+        position:relative;
+        top:20px;
+        left:-50px;
+        padding:10px 20px;
+        background-color:#ffffff;
+        width:100%;
+        float:none;
+        border:solid 1px #cdcdcd;
+    }
+    #nav ul li a {
+        font-size:3em;
+    }
+    #content {
+        width:100%;
+    }
+    article {
+    margin: 20px auto;
+    padding:10px 50px;
+    }
+    footer {
+        position:relative;
+        width:100%;
+        font-size:2em;
     }
 }
