@@ -146,19 +146,21 @@ aside {
     }
     header {
         width:95%;
+        height:8em;
     }
     header h1 {
         text-align:center;
-        font-size:2em;
+        font-size:2.5em;
     }
     header p {
         text-align:center;
+        font-size:1.5em;
     }
     #nav {
         position:relative;
         float:left;
-        bottom:70px;
-        left:-20px;
+        top:-9em;
+        left:-0px;
     }
     #nav:not( :target ) > a:first-of-type,
 				#nav:target > a:last-of-type
@@ -177,12 +179,12 @@ aside {
         left:-50px;
         padding:10px 20px;
         background-color:#ffffff;
-        width:100%;
+        width:80%;
         float:none;
         border:solid 1px #cdcdcd;
     }
     #nav ul li a {
-        font-size:3em;
+        font-size:5em;
     }
     #content {
         width:100%;
@@ -203,19 +205,21 @@ aside {
     }
     header {
         width:95%;
+        height:8em;
     }
     header h1 {
         text-align:center;
-        font-size:2em;
+        font-size:2.5em;
     }
     header p {
         text-align:center;
+        font-size:1.5em;
     }
     #nav {
         position:relative;
         float:left;
-        bottom:70px;
-        left:-20px;
+        top:-9em;
+        left:-0px;
     }
     #nav:not( :target ) > a:first-of-type,
 				#nav:target > a:last-of-type
@@ -234,12 +238,12 @@ aside {
         left:-50px;
         padding:10px 20px;
         background-color:#ffffff;
-        width:100%;
+        width:80%;
         float:none;
         border:solid 1px #cdcdcd;
     }
     #nav ul li a {
-        font-size:3em;
+        font-size:5em;
     }
     #content {
         width:100%;
@@ -251,6 +255,6 @@ aside {
     footer {
         position:relative;
         width:100%;
-        font-size:2em;
+        font-size:12px;
     }
 }
