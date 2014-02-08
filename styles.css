@@ -3,7 +3,7 @@ body {
     color:#2e2e2e;
     font:Josefin;
     font-family:sans-serif;
-    font-size:14px;
+    font-size:62.5%;
 }
 a {
     color:#2e2e2e;
@@ -15,24 +15,35 @@ a:hover {
 a:visited {
     color:#cdcdcd;
 }
+h1 {
+    font-size:3em;
+}
+p {
+    font-size:1.5em;
+}
+li { 
+    font-size:1.5em;
+}
 header {
     background-color:#ffffff;
     display:block;
     float:left;
-    width:60%;
-    height:80px;
+    width:63%;
+    height:8em;
     margin:0;
-    padding:20px 30px;
+    padding:2em 3em;
     border-bottom:solid #cdcdcd 2px;
 }
 header h1 {
     margin:auto;
-    text-align:center;
-    font-size:3em;
+    text-align:left;
+    font-size:4em;
 }
 header p {
-    text-align:center;
-    font-size:1em;
+    position:relative;
+    left:2em;
+    text-align:left;
+    font-size:2em;
 }
 #nav > a {
     display:none;
@@ -41,8 +52,8 @@ header p {
     list-style-type:none;
     float:right;
     position:relative;
-    bottom:30px;
-    font-size:1em;
+    bottom:4em;
+    left:1em;
 }
 #nav ul li {
     display:inline-block;
@@ -65,22 +76,22 @@ article {
     background-color:#ffffff;
     text-align:left;
     margin: 30px auto;
-    padding:30px 75px;
+    padding:2em 7.5em;
 }
 article h1 {
     border-bottom:solid #cdcdcd 1px;
     width:100%;
-    font-size:1.5em;
-    padding:5px;
+    font-size:2em;
+    padding:1em;
 }
 article p {
-    text-indent:30px;
+    text-indent:3em;
     width:90%;
-    margin:10px auto;
+    margin:1em auto;
 }
 article .article-footer {
     text-align:right;
-    font-size:12px;
+    font-size:0.85em;
     color:#cdcdcd;
 }
 footer {
@@ -91,7 +102,6 @@ footer {
     margin:0;
     width:64%;
     height:30px;
-    font-size:10px;
 }
 footer ul {
     list-style-type:none;
@@ -150,17 +160,23 @@ aside {
     }
     header h1 {
         text-align:center;
-        font-size:2.5em;
+        font-size:3em;
     }
     header p {
         text-align:center;
-        font-size:1.5em;
+        font-size:2em;
     }
     #nav {
         position:relative;
         float:left;
         top:-9em;
         left:-0px;
+    }
+    #nav img{
+        position: relative;
+        top:-2em;
+        height:8em;
+        width:8em;
     }
     #nav:not( :target ) > a:first-of-type,
 				#nav:target > a:last-of-type
@@ -169,19 +185,21 @@ aside {
 				}
     #nav ul {
         display:none;
+        position: relative;
+        top:1em;
+        width: 100%;
     }
     #nav:target > ul {
         display:block;
     }
     #nav ul li {
         position:relative;
-        top:20px;
-        left:-50px;
-        padding:10px 20px;
+        left:-3.5em;
+        padding:1em 2em;
         background-color:#ffffff;
-        width:80%;
+        width:100%;
         float:none;
-        border:solid 1px #cdcdcd;
+        border-bottom:solid 1px #cdcdcd;
     }
     #nav ul li a {
         font-size:5em;
