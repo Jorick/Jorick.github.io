@@ -153,8 +153,7 @@ aside {
         width:100%;
     }
 }
-/*@media handheld, (max-device-width: 1280px) {*/
-@media screen and (max-width: 1280px){
+@media handheld, (max-device-width: 1280px) {
     aside {
         display:none;
     }
