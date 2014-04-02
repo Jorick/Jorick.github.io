@@ -4,9 +4,9 @@ $(document).ready(function(){
             // Animation complete.
         });
     });
-    $( "#nav" ).click(function() {
+/*    $( "#nav" ).click(function() {
         $( "#nav" ).slideUp( "slow", function() {
             // Animation complete.
         });
     });
-});
+});*/
