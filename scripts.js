@@ -8,5 +8,5 @@ $(document).ready(function(){
         $( "#nav" ).slideUp( "slow", function() {
             // Animation complete.
         });
-    });
-});*/
+    });*/
+});
