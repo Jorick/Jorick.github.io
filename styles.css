@@ -1,7 +1,7 @@
 body {
     background-color:#292d2f;
     color:#e1e1db;
-    font-family: 'Josefin Sans';
+    font-family: 'Titillium Web';
     font-size:62.5%;
 }
 a {
@@ -163,8 +163,8 @@ aside {
         width:100%;
     }
 }
-/*@media handheld, (max-device-width: 1280px) {*/
-@media screen and (max-width: 1280px){ /* For testing on pc */
+@media handheld, (max-device-width: 1280px) {
+/*@media screen and (max-width: 1280px){*/ /* For testing on pc */
     aside {
         display:none;
     }
