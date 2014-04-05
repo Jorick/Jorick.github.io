@@ -25,4 +25,4 @@ jQuery('img.svg').each(function(){
 
             }, 'xml');
 
-        });
+});
