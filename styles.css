@@ -1,3 +1,7 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color:#ffffff;
     color:#505353;
@@ -8,14 +12,14 @@ body {
     min-width: 800px;
 }
 a {
-    color:#000000;
+    color:#b5baba;
     text-decoration:none;
 }
 a:hover {
     color:#19bccb;
 }
 a:visited {
-    color:#cdcdcd;
+    color:#b5baba;
 }
 h1 {
     font-size:3em;
@@ -27,17 +31,14 @@ li {
     font-size:1.5em;
 }
 header {
+    position: relative;
+    top:-3.5em;
     background-image: url(images/header-bg.jpg);
     background-position: center;
     color:#ffffff;
-    display:block;
-    float:left;
     width:100%;
     height:40vh;
-    margin-bottom: 2em;
-    margin-top: -5em;
     border-bottom:solid #97cad0 4px;
-    z-index: 10;
 }
 #avatar{
     background-image: url(images/avatar.png);
@@ -49,25 +50,26 @@ header {
     width: 18em;
     float: left;
     position: relative;
-    top: 15%;
-    left: 4em;
+    top: 18%;
+    left: 8em;
 }
 header h1 {
     position: relative;
-    margin-left: 30%;
+    top: 1em;
+    margin-left: 35%;
     text-align:left;
     font-size:5em;
 }
 header p {
     position:relative;
-    top:-2em;
-    margin-left: 30%;
+    top:1em;
+    margin-left: 35%;
     text-align:left;
     font-size:2em;
 }
 header li {
     position: relative;
-    top: -2em;
+    top: 1em;
     margin-left: 40%;
     padding: 0.5em;
     list-style-type: none;
@@ -84,21 +86,31 @@ header li a:visited {
 svg path{
     fill: #e1e1db;
 }
+nav {
+    position: relative;
+    top: -3.5em;
+    width: 100%;
+    height: 6em;
+    padding: 1em 0;
+    background-color: #ffffff;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+}
 #nav {
     list-style-type:none;
-    width: 45em;
+    max-width: 80%;
     padding: 1em auto;
     font-size: 1.2em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    text-align: center;
 }
 #nav li {
     display:inline-block;
-    float: left;
     width: 5em;
     height: 2em;
     margin:0 2em;
-    text-align: center;
 }
 #nav li a {
     color:#b5baba;
@@ -111,6 +123,7 @@ svg path{
 #nav li.selected {
     border-bottom: solid #97cad0 4px;
 }
+
 #content {
     display:block;
     float:left;
@@ -149,12 +162,8 @@ article .article-footer {
 
 @media handheld, (max-device-width: 1280px) {
 /*@media screen and (max-width: 1280px){*/ /* For testing on pc */
-    aside {
-        display:none;
-    }
     header {
-        width:95%;
-        height:14em;
+        height:40vh;
     }
     header h1 {
         text-align:center;
@@ -165,7 +174,6 @@ article .article-footer {
         font-size:3em;
     }
     nav {
-        position:relative;
         top:-15em;
         width: 100%;
         z-index: 50;
@@ -185,8 +193,7 @@ article .article-footer {
         width: 90%;
         position: relative;
         top: 10em;
-        left:3em;
-        
+        left:3em;    
     }
     #nav li {
         padding:1em 1em;
@@ -202,12 +209,5 @@ article .article-footer {
     article {
     margin: 2em auto;
     padding:1em 5em;
-    }
-    footer {
-        position:relative;
-        width:100%;
-    }
-    footer ul li {
-        font-size: 4em;
     }
 }
