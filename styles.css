@@ -44,7 +44,8 @@ header {
     background-position: center;
     background-size: contain;
     border: solid #ffffff 6px;
-    border-radius: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
     height: 18em;
     width: 18em;
     float: left;
