@@ -205,8 +205,13 @@ article .article-footer {
         padding: 0;
         font-size: 5em;
     }
+    nav {
+        position: relative;
+        top: 0;
+        
+    }
     #nav {
-        display: none;
+        display: block;
     }
     #navbutton {
         position: relative;
@@ -221,5 +226,15 @@ article .article-footer {
     }
     .open p:before {
         content: "- ";
+    }
+    article {
+        margin: 4em 5%;
+        padding:1em 4em;
+    }
+    article h1 {
+        font-size: 4em;
+    }
+    article p {
+        font-size: 3em;   
     }
 }
