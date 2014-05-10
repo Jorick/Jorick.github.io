@@ -27,7 +27,7 @@ h1 {
 p {
     font-size:1.5em;
 }
-li { 
+li {
     font-size:1.5em;
 }
 header {
@@ -55,22 +55,22 @@ header {
 }
 header h1 {
     position: absolute;
-    top: 0em;
+    top: 1em;
     margin-left: 35%;
     text-align:left;
     font-size:5em;
 }
 header p {
     position:absolute;
-    top: 4em;
+    top: 7em;
     margin-left: 35%;
     text-align:left;
     font-size:2em;
 }
 header ul {
     position: absolute;
-    margin-left: 40%;
-    top: 14em;
+    margin-left: 60%;
+    top: 9em;
 }
 header li {
     padding: 0.5em;
@@ -134,12 +134,14 @@ nav {
     margin:0px;
 }
 article {
-    background-color: #f6f8f8;
     text-align:left;
-    margin: 4em 20%;
+    margin: 2em 20%;
     padding:1em 7.5em;
-    border: solid #76a786 1px;
-    border-radius: 6px;
+}
+article .blog {
+  background-color: #f6f8f8;
+  border: solid #76a786 1px;
+  border-radius: 6px;
 }
 article h1:before {
     content: "> ";
@@ -168,7 +170,7 @@ article .article-footer {
     body {
         min-width: 200px;
     }
-    
+
     header {
         position: relative;
         margin: 0;
@@ -211,7 +213,7 @@ article .article-footer {
     nav {
         position: absolute;
         top: 0;
-        
+
     }
     #nav {
         display: block;
@@ -238,6 +240,6 @@ article .article-footer {
         font-size: 4em;
     }
     article p {
-        font-size: 3em;   
+        font-size: 3em;
     }
 }
