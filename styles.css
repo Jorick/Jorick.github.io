@@ -69,7 +69,7 @@ header p {
 }
 header ul {
     position: absolute;
-    margin-left: 60%;
+    margin-left: 80%;
     top: 9em;
 }
 header li {
@@ -101,6 +101,9 @@ nav {
     top: 0;
     border-bottom: solid #76a786 2px;
 }
+#menubutton{
+    display: none;
+}
 #nav {
     list-style-type:none;
     max-width: 80%;
@@ -126,7 +129,6 @@ nav {
 #nav li.selected {
     border-bottom: solid #76a786 4px;
 }
-
 #content {
     display:block;
     float:left;
@@ -136,7 +138,8 @@ nav {
 article {
     text-align:left;
     margin: 2em 20%;
-    padding:1em 7.5em;
+    padding:1em 1em;
+    max-width: 800px;
 }
 article .blog {
   background-color: #f6f8f8;
@@ -164,82 +167,74 @@ article .article-footer {
     color:#cdcdcd;
 }
 
-
-/*@media handheld, (max-device-width: 1280px) {*/
-@media screen and (max-width: 1280px){ /* For testing on pc */
-    body {
-        min-width: 200px;
+/* Small screens */
+@media screen and (max-width: 720px){
+    body{
+        min-width: 300px;
     }
-
-    header {
-        position: relative;
-        margin: 0;
+    header{
         height: 100vh;
-   }
-    #avatar {
+    }
+    header ul{
+        top: 25%;
+        margin-left: 60%;
+    }
+    #avatar{
         position: absolute;
-        left: 0;
-        float: none;
-        margin: 0 auto;
+        top: 20%;
+        margin-left: 10%;
     }
     header h1{
         position: absolute;
-        top: 2em;
-        font-size: 8em;
-        margin: 0;
+        top: 60%;
+        width: 70%;
+        margin-left: 15%;
         text-align: center;
     }
     header p{
         position: absolute;
-        top: 3.5em;
-        left: 0;
-        margin: 0;
-        font-size: 5em;
+        top: 70%;
+        width: 70%;
+        margin-left: 15%;
         text-align: center;
     }
-    header ul {
-        position: absolute;
-        top: 15em;
-        margin: 0 auto;
-        width: 95%;
-        text-align: center;
-    }
-    header li {
-        display: inline-block;
-        margin: 0 10%;
-        padding: 0;
-        font-size: 5em;
-    }
-    nav {
-        position: absolute;
-        top: 0;
-
-    }
-    #nav {
+    #menubutton{
         display: block;
-    }
-    #navbutton {
         position: relative;
-        top: -2em;
-        display: block;
+        max-width: 200px;
+        font-size: 1.5em;
+        margin: auto;
         text-align: center;
-        color: #b5baba;
-        font-size: 4em;
     }
-    .closed p:before {
-        content: "+ ";
+    .navigation{
+        top: 0px;
     }
-    .open p:before {
-        content: "- ";
+    #nav{
+        display: none;
+        position: fixed;
+        top: 5em;
+        height: 8em; 
+        width: 100%;
+        margin: auto;
     }
-    article {
-        margin: 4em 5%;
-        padding:1em 4em;
+    #nav li{
+        display: block;
+        width: 100%;
+        margin: auto;
+        background-color: #ffffff;
+
+        }
+    #nav li.selected{
+        border-bottom: none;
     }
-    article h1 {
-        font-size: 4em;
+    #nav li.selected :before{
+        content: "> ";
     }
-    article p {
-        font-size: 3em;
+    #content{
+        min-height: 100vh;
+        margin-top: 2em;
     }
+    article{
+        margin: 1em 0;
+
 }

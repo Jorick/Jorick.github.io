@@ -1,15 +1,3 @@
-$(document).ready(function(){
-    $( "#navbutton" ).click(function() {
-        $( "#nav" ).slideToggle( "slow", function() {
-            // Animation complete.
-        });
-    });
-/*    $( "#nav" ).click(function() {
-        $( "#nav" ).slideUp( "slow", function() {
-            // Animation complete.
-        });
-    });*/
-});
 $(document).ready(function() {
     var stickyNavTop = $('.navigation').offset().top;
 
@@ -29,4 +17,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
 	   stickyNav();
     });
+});
+$(document).ready(function(){
+    $("#menubutton").click(function(){
+        $("#nav").slideToggle("slow");
+    });
+
 });
