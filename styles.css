@@ -168,7 +168,7 @@ article .article-footer {
 }
 
 /* Small screens */
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) or handheld{
     body{
         min-width: 300px;
     }
@@ -190,13 +190,14 @@ article .article-footer {
         width: 70%;
         margin-left: 15%;
         text-align: center;
-    }
+        }
     header p{
         position: absolute;
         top: 70%;
         width: 70%;
         margin-left: 15%;
         text-align: center;
+    }
     }
     #menubutton{
         display: block;
