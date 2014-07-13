@@ -198,7 +198,6 @@ article .article-footer {
         margin-left: 15%;
         text-align: center;
     }
-    }
     #menubutton{
         display: block;
         position: relative;
@@ -214,7 +213,7 @@ article .article-footer {
         display: none;
         position: fixed;
         top: 5em;
-        height: 8em; 
+        height: 8em;
         width: 100%;
         margin: auto;
     }
@@ -224,7 +223,7 @@ article .article-footer {
         margin: auto;
         background-color: #ffffff;
 
-        }
+    }
     #nav li.selected{
         border-bottom: none;
     }
@@ -237,5 +236,5 @@ article .article-footer {
     }
     article{
         margin: 1em 0;
-
+    }
 }
