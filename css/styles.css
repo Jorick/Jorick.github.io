@@ -9,7 +9,6 @@ body {
     font-size:62.5%;
     margin: 0;
     padding: 0;
-    min-width: 800px;
 }
 a {
     color:#b5baba;
@@ -69,18 +68,24 @@ ul{
   font-size: 2em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.navbar {
-  position: absolute;
-  bottom: 0;
-  background-color: #fff;
+.menu {
+  text-align: center;
+  font-size: 1.5em;
+}
+.menu a {
+  color:#505353;
 }
 .sticky {
     position: fixed;
     top: 0;
     border-bottom: solid #76a786 2px;
 }
+#content {
+  margin-top: 4em;
+}
 article {
     text-align:left;
+    font-size: 1.2em;
 }
 article .blog {
   background-color: #f6f8f8;

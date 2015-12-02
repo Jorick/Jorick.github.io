@@ -1,14 +1,15 @@
+// Make the menu stick to the top when it reaches top of page
 $(document).ready(function() {
-    var stickyNavTop = $('.navigation').offset().top;
+    var stickyNavTop = $('.menu').offset().top;
 
     var stickyNav = function(){
         var scrollTop = $(window).scrollTop();
      
         if (scrollTop > stickyNavTop) { 
-            $('.navigation').addClass('sticky');
+            $('.menu').addClass('sticky');
         } 
         else {
-            $('.navigation').removeClass('sticky'); 
+            $('.menu').removeClass('sticky'); 
         }
     };
 
@@ -17,10 +18,4 @@ $(document).ready(function() {
     $(window).scroll(function() {
 	   stickyNav();
     });
-});
-$(document).ready(function(){
-    $("#menubutton").click(function(){
-        $("#nav").slideToggle("slow");
-    });
-
 });

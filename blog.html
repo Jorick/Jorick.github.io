@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="doubletap.js"></script>
-        <script src="scripts.js"></script>
-        <title>Jorick's Github homepage</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-         <link href='http://fonts.googleapis.com/css?family=Metrophobic|Titillium+Web:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
-        <meta name="Keywords" content="Portofolio webdev webdesign blog">
-        <meta name="description" content="My landing page for my Github account, documenting my learning process in web design and web development">
-    </head>
-    <body>
-         <header>
-                <section id="avatar"></section>
-                <h1>Jorick's Github</h1>
-                <p>My learning process in web development.</p>
-                <ul>
-                    <li><a href="https://twitter.com/jorick_r" target="_blank"><img src="images/Twitter.png"/></a></li>
-                    <li><a href="https://plus.google.com/+JorickRoels/posts" target="_blank"><img src="images/Google+.png"/></a></li>
-                </ul>
-        </header>
-        <nav class="navigation" role="navigation">
-            <a id="menubutton" href="#menubutton">Menu</a>
-            <ul id="nav" >
-                <li><a href="index.html">About</a></li>
-                <li class="selected"><a href="blog.html">Blog</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-        <section id="content">
-            <article class="blog">
-                <h1>Complete redesign</h1>
-                <p>Inspired by the new Twitter layout, I decided to redesign my homepage. I got rid of some unnecessary elements, redesigned the color scheme, added a sticky navbar ( thank you Stackoverflow ). It's not yet fully responsive, I'm still working on the mobile layout but this will be added in the next days.</p>
+  <head>
+    <title>Jorick's Github homepage</title>
+    <link href='http://fonts.googleapis.com/css?family=Metrophobic|Titillium+Web:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="Keywords" content="Portofolio webdev webdesign blog Jorick">
+    <meta name="description" content="My landing page for my Github account, documenting my learning process in web design and web development">
+  </head>
+  <body>
+    <div id="header">
+      <div class="row full-width">
+        <div class="large-3 medium-3 columns">
+          <div class="avatar"></div>
+        </div>
+        <div class="large-6 medium-6 columns">
+          <h1 class="title" id="title-text">Jorick's Github </h1>
+          <p class="title" id="title-subtext">Welcome at my github landing page.</p>
+        </div>
+        <div class="large-3 medium-3 columns">
+          <ul>
+            <li><a href="https://twitter.com/jorick_r" target="_blank"><img src="images/Twitter.png"/></a></li>
+            <li><a href="https://plus.google.com/+JorickRoels/posts" target="_blank"><img src="images/Google+.png"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="column row">
+      <ul class="menu medium-horizontal expanded">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <section id="content">
+      <div class="row">
+        <div class="large-12 medium-12 columns">
+          <article class="main">
+            <h1>Complete redesign</h1>
+            <p>Inspired by the new Twitter layout, I decided to redesign my homepage. I got rid of some unnecessary elements, redesigned the color scheme, added a sticky navbar ( thank you Stackoverflow ). It's not yet fully responsive, I'm still working on the mobile layout but this will be added in the next days.</p>
             <section class="article-footer">
-                    <p>thu 10 apr 2014</p>
-                </section>
-            </article>
-             <article class="blog">
-                <h1>Working mobile navigation menu</h1>
-                <p>I managed to create a working navigation menu for mobile devices. I've only tested it on my Moto G. I only have a few media queries, so the menu might not show up on tablets. Many thanks to the author of this site:<br>
+              <p>thu 10 apr 2014</p>
+            </section>
+          </article>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 medium-12 columns">
+         <article class="main">
+            <h1>Working mobile navigation menu</h1>
+            <p>I managed to create a working navigation menu for mobile devices. I've only tested it on my Moto G. I only have a few media queries, so the menu might not show up on tablets. Many thanks to the author of this site:<br>
 <a href="=http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly">http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly</a><br></p>
-                 <p>Next thing that's on the todo list is to find a correct scale for the content on mobile devices. The text is still kind of small and so is the menu.</p>
-                <section class="article-footer">
-                    <p>sun 26 jan 2014</p>
-                </section>
-            </article>
-             <article class="blog">
-                <h1>Basic responsive layout</h1>
-                <p>My site is now semi-responsive. With the help of media queries the layout now scales and hides things according to the screen size. Font size is not working properly yet on mobile devices. First thing to do now is to make a working drop down navigation menu for the smallest screen size.</p>
-                <section class="article-footer">
-                    <p>sun 19 jan 2014</p>
-                </section>
-            </article>
-            <article class="blog">
-                <h1>First steps</h1>
-                <p>Now that I have my basic layout, the first thing I want to do: learn about adding support for mobile devices. Right now the website is entirely scalable with the screen size. The goal is to get a working mobile layout, depending on screen size with an alternative navigation menu/button.<br>When I figure out how to do this, I'll start adding more content, add working navigation, minimal visual tweaks and effects</p>
-                <section class="article-footer">
-                    <p>wed 15 jan 2014</p>
-                </section>
-            </article>
-    </body>
+             <p>Next thing that's on the todo list is to find a correct scale for the content on mobile devices. The text is still kind of small and so is the menu.</p>
+            <section class="article-footer">
+                <p>sun 26 jan 2014</p>
+            </section>
+         </article>
+       </div>
+     </div>
+      <div class="row">
+        <div class="large-12 medium-12 columns">
+        <article class="main">
+          <h1>Basic responsive layout</h1>
+          <p>My site is now semi-responsive. With the help of media queries the layout now scales and hides things according to the screen size. Font size is not working properly yet on mobile devices. First thing to do now is to make a working drop down navigation menu for the smallest screen size.</p>
+          <section class="article-footer">
+              <p>sun 19 jan 2014</p>
+          </section>
+        </article>
+       </div>
+     </div>
+      <div class="row">
+        <div class="large-12 medium-12 columns">
+        <article class="main">
+          <h1>First steps</h1>
+          <p>Now that I have my basic layout, the first thing I want to do: learn about adding support for mobile devices. Right now the website is entirely scalable with the screen size. The goal is to get a working mobile layout, depending on screen size with an alternative navigation menu/button.<br>When I figure out how to do this, I'll start adding more content, add working navigation, minimal visual tweaks and effects</p>
+          <section class="article-footer">
+              <p>wed 15 jan 2014</p>
+          </section>
+        </article>
+       </div>
+     </div>
+    </section>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+    <script src="js/svg.js"></script>
+  </body>
 </html>
