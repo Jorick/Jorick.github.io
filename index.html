@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="doubletap.js"></script>
-        <script src="scripts.js"></script>
-        <script src="svg.js"></script>
         <title>Jorick's Github homepage</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
         <link href='http://fonts.googleapis.com/css?family=Metrophobic|Titillium+Web:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <meta name="Keywords" content="Portofolio webdev webdesign blog Jorick">
         <meta name="description" content="My landing page for my Github account, documenting my learning process in web design and web development">
     </head>
     <body>
-        <header>
-                <section id="avatar"></section>
-                <h1>Jorick's Github </h1>
-                <p>My learning process in web development.</p>
-                <ul>
-                    <li><a href="https://twitter.com/jorick_r" target="_blank"><img src="images/Twitter.png"/></a></li>
-                    <li><a href="https://plus.google.com/+JorickRoels/posts" target="_blank"><img src="images/Google+.png"/></a></li>
-                </ul>
-        </header>
-        <nav class="navigation" role="navigation">
-            <a id="menubutton" href="#menubutton">Menu</a>
-            <ul id="nav">
-                <li class="selected"><a href="index.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="projects.html">Projects</a></li>
+      <div id="header">
+        <div class="row full-width">
+          <div class="large-3 medium-3 columns">
+            <div class="avatar"></div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <h1 class="title" id="title-text">Jorick's Github </h1>
+            <p class="title" id="title-subtext">Welcome at my github landing page.</p>
+          </div>
+          <div class="large-3 medium-3 columns">
+            <ul>
+              <li><a href="https://twitter.com/jorick_r" target="_blank"><img src="images/Twitter.png"/></a></li>
+              <li><a href="https://plus.google.com/+JorickRoels/posts" target="_blank"><img src="images/Google+.png"/></a></li>
             </ul>
-            <section class="closed" id="navbutton">
-                <p>Navigation</p>
-            </section>
-        </nav>
+          </div>
+        </div>
+        <div class="navbar column row">
+          <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
         <section id="content">
-            <article class="main">
+          <div class="row">
+            <div class="large-12 medium-12 columns">
+              <article class="main">
                 <h1>About me.</h1>
                 <p>I'm an engineer in the field of construction with a broad interest in science and technology. During my education we had some basic courses C++. I found out that I kind of enjoyed programming but I couldn't spend more time on it back then. Luckily I was running Linux on my home laptop so not everything I learned was lost as I could use the basic skill for some scripting.</p>
                 <p>Now that I'm graduated and have a job, I have time during weekends and holidays. No more endless studying. My interest in code sparked again but I also wanted to be a bit creative. This is where web design and development enters the picture. I can play around with code that's relatively easy to learn, be somewhat creative and actually build something useful while learning.</p>
-            </article>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 medium-12 columns">
              <article class="main">
                 <h1>Goals</h1>
                     <p>My goal is to be able to make static websites with design, usability and mobile devices in mind.</p>
                     <p>I've alse gained some more interest in Javascript and Node.js. Being able to learn backend web development with the same language is a big plus for me.</p>
-            </article>
+             </article>
+           </div>
+         </div>
+          <div class="row">
+            <div class="large-12 medium-12 columns">
             <article class="main">
                 <h1>My tools and sources</h1>
                 <p>As mentioned before I'm running Linux. I've spent some years
@@ -64,6 +76,14 @@
                   <li>YouCompleteMe</li>
                 </ul>
             </article>
+           </div>
+         </div>
         </section>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/svg.js"></script>
     </body>
 </html>
