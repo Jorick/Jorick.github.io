@@ -92,7 +92,14 @@ ul{
 article {
     text-align:left;
     font-size: 1.2em;
+    margin-bottom: 2em;
 }
+article ul {
+  list-style-type: circle;
+  width: 90%;
+  margin-left: 4em;
+}
+
 article .blog {
   background-color: #f6f8f8;
   border: solid #76a786 1px;
